@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="640dp"
+    android:viewportWidth="360"
+    android:viewportHeight="640">
+    
+    <!-- Top trail looping near top left wrench honeycomb and logo -->
+    <path
+        android:pathData="M-20,150 C40,240 80,60 180,110 C240,140 300,10 380,80"
+        android:strokeColor="#20FFC107"
+        android:strokeWidth="1.8"
+        android:fillColor="#00000000" />
+        
+    <!-- Bottom trail looping near bottom left heart -->
+    <path
+        android:pathData="M-10,580 C50,560 80,620 50,600 C30,580 10,620 40,580 C80,530 120,560 180,570"
+        android:strokeColor="#20FFC107"
+        android:strokeWidth="1.8"
+        android:fillColor="#00000000" />
+</vector>

@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Top Navigation Toolbar Header -->
+    <RelativeLayout
+        android:id="@+id/toolbar_hub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/hub_btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_circle_yellow"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="#FFC107"
+            android:contentDescription="Back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BeeAI Diagnostic Hub 🧠"
+                android:textColor="#FFC107"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI Vision Scans &amp; Diagnostics"
+                android:textColor="#80FFFFFF"
+                android:textSize="10.5sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Bottom Conversational AI query panel -->
+    <LinearLayout
+        android:id="@+id/hub_layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="14dp"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="#20FFFFFF"
+            app:cardBackgroundColor="#0D0D0D">
+
+            <EditText
+                android:id="@+id/hub_edt_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Ask BeeAI details about visual scans..."
+                android:textColorHint="#4E4E4E"
+                android:textColor="@color/white"
+                android:textSize="13.5sp"
+                android:paddingHorizontal="14dp"
+                android:singleLine="true" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/hub_btn_send"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            app:cardCornerRadius="14dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#FFC107"
+            app:cardBackgroundColor="#FFC107"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@android:drawable/ic_menu_send"
+                app:tint="@color/black"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="false"
+                android:focusable="false"
+                android:contentDescription="Send query" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <!-- Main Scrollable Ledger Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_hub"
+        android:layout_above="@id/hub_layout_input"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- Interactive Visual Camera Scanner Trigger Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_interactive_scanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="#FFC107"
+                app:cardBackgroundColor="#0D0D0D"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✨ Launch Live BeeAI Visual Scanner"
+                        android:textColor="#FFC107"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cinema-Grade Real-Time Diagnostics &amp; Instant Booking Dispatcher"
+                        android:textColor="#80FFFFFF"
+                        android:textSize="11sp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_launch_scanner"
+                        style="@style/Widget.Material3.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Open Viewfinder 📷"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:backgroundTint="#FFC107"
+                        app:cornerRadius="10dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 1. Custom Glassmorphic Stats Metrics Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:strokeWidth="1.5dp"
+                app:strokeColor="#FFC107"
+                app:cardBackgroundColor="#0D0D0D">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:weightSum="3"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Scans Done"
+                            android:textColor="#80FFFFFF"
+                            android:textSize="10sp"
+                            android:layout_marginTop="2dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="32dp"
+                        android:background="#20FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="98.4%"
+                            android:textColor="#FFC107"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Accuracy Match"
+                            android:textColor="#80FFFFFF"
+                            android:textSize="10sp"
+                            android:layout_marginTop="2dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="32dp"
+                        android:background="#20FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+250"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HP Earned"
+                            android:textColor="#80FFFFFF"
+                            android:textSize="10sp"
+                            android:layout_marginTop="2dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Section Title: Diagnostic History Ledger -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI HISTORICAL DIAGNOSTICS SCANNER LOGS"
+                android:textColor="#FFC107"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Ledger Scrollable Stack -->
+            <LinearLayout
+                android:id="@+id/hub_layout_ledger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 1. Burst Pipe water leak scan -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#20FFFFFF"
+                    app:cardBackgroundColor="#0D0D0D">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/log1_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diagnosis: High Pressure Water Leak 🚰"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/log1_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/log1_title"
+                            android:text="High water burst metrics located. Recommended: Plumber Specialist."
+                            android:textColor="#80FFFFFF"
+                            android:textSize="11.5sp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toStartOf="@id/log1_btn_rebook"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/log1_desc"
+                            android:text="Est: 1.5 Hrs • ₹18.00 / hr"
+                            android:textColor="#FFC107"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/log1_btn_rebook"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:text="Book ✨"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="11sp"
+                            app:backgroundTint="#FFC107"
+                            app:cornerRadius="8dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:paddingHorizontal="12dp" />
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 2. Dirty Room Vibe check -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#20FFFFFF"
+                    app:cardBackgroundColor="#0D0D0D">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/log2_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diagnosis: Cluttered Room Vibe 🧹"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/log2_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/log2_title"
+                            android:text="Severe dust layout &amp; unorganized parameters. Recommended: Cleaning Pro."
+                            android:textColor="#80FFFFFF"
+                            android:textSize="11.5sp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toStartOf="@id/log2_btn_rebook"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/log2_desc"
+                            android:text="Est: 2.0 Hrs • ₹25.00 / hr"
+                            android:textColor="#FFC107"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/log2_btn_rebook"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:text="Book ✨"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="11sp"
+                            app:backgroundTint="#FFC107"
+                            app:cornerRadius="8dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:paddingHorizontal="12dp" />
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 3. Overgrown Lawn garden check -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#20FFFFFF"
+                    app:cardBackgroundColor="#0D0D0D">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/log3_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diagnosis: Wild Jungle Yard 🪴"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/log3_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/log3_title"
+                            android:text="Overgrown lawn heights &amp; weed infestation. Recommended: Gardening Pro."
+                            android:textColor="#80FFFFFF"
+                            android:textSize="11.5sp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toStartOf="@id/log3_btn_rebook"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/log3_desc"
+                            android:text="Est: 3.0 Hrs • ₹15.00 / hr"
+                            android:textColor="#FFC107"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/log3_btn_rebook"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:text="Book ✨"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="11sp"
+                            app:backgroundTint="#FFC107"
+                            app:cornerRadius="8dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:paddingHorizontal="12dp" />
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fullscreen Live AI Camera Diagnostics view finder overlay (Initially hidden) -->
+    <RelativeLayout
+        android:id="@+id/layout_scanner_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0000000"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- Cinematic Viewfinder targeting box -->
+        <View
+            android:id="@+id/scanner_viewfinder"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_border_scanner" />
+
+        <!-- Pulsing scanner green laser line -->
+        <View
+            android:id="@+id/scanner_laser_line"
+            android:layout_width="280dp"
+            android:layout_height="4dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FF00FF00" />
+
+        <!-- Live diagnosis status text -->
+        <TextView
+            android:id="@+id/txt_scanner_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scanner_viewfinder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="INITIALIZING DIALECTRIC WAVEFORMS... 📷"
+            android:textColor="#FF00FF00"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/txt_scanner_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_scanner_log"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Securing locking bounds in 5s..."
+            android:textColor="#80FFFFFF"
+            android:textSize="11sp" />
+
+        <!-- Overlay targeting coordinates HUD -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="24dp"
+            android:text="LAT: MOCKING GPS...\nLNG: MOCKING GPS...\nSYS: ONLINE"
+            android:textColor="#30FF0000"
+            android:textSize="10sp"
+            android:fontFamily="monospace" />
+
+        <!-- Close scanner button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_close_scanner"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="Cancel Scan ✕"
+            android:textColor="#FF4D4D"
+            app:strokeColor="#FF4D4D"
+            app:strokeWidth="1.5dp"
+            app:cornerRadius="10dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

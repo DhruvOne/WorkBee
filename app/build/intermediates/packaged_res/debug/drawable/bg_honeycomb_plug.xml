@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Honeycomb Outline -->
+    <path
+        android:pathData="M50,8 L86,29 L86,71 L50,92 L14,71 L14,29 Z"
+        android:strokeColor="#25FFC107"
+        android:strokeWidth="2.5"
+        android:fillColor="#0DFFC107" />
+    <!-- Plug shape -->
+    <path
+        android:pathData="M40,38 L60,38 L60,52 C60,57 56,62 50,62 C44,62 40,57 40,52 Z"
+        android:fillColor="#FFC107" />
+    <!-- Prongs -->
+    <path
+        android:pathData="M45,38 L45,28 M55,38 L55,28"
+        android:strokeColor="#FFC107"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round" />
+    <!-- Wire -->
+    <path
+        android:pathData="M50,62 L50,78"
+        android:strokeColor="#FFC107"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+</vector>

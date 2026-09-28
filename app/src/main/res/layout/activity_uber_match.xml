@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="20dp">
+
+    <!-- Top Toolbar Header -->
+    <TextView
+        android:id="@+id/txt_radar_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibe Matching Radar 📡"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFC107"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txt_radar_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WorkBee Real-Time Dispatch Engine"
+        android:textSize="11sp"
+        android:textColor="#80FFFFFF"
+        android:layout_below="@id/txt_radar_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp" />
+
+    <!-- 1. Central Radar Search Spinner Layout -->
+    <RelativeLayout
+        android:id="@+id/layout_radar_searching"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerInParent="true">
+
+        <!-- Concentric Animated Pulsing Radar Rings -->
+        <View
+            android:id="@+id/radar_ring1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_circle_yellow"
+            android:alpha="0" />
+
+        <View
+            android:id="@+id/radar_ring2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_circle_yellow"
+            android:alpha="0" />
+
+        <View
+            android:id="@+id/radar_ring3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_circle_yellow"
+            android:alpha="0" />
+
+        <!-- Central spinning container -->
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_circle_yellow"
+            android:backgroundTint="#0AFFFFFF">
+
+            <!-- Outer Spinning Glow Radar Circle -->
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="true"
+                android:indeterminateTint="#FFC107"
+                android:indeterminateTintMode="src_atop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📡"
+                android:textSize="36sp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!-- Search Phase Outlined Cancel Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel_broadcast"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/card_match_status"
+        android:layout_marginBottom="16dp"
+        android:text="Cancel Booking Request ✕"
+        android:textColor="#FF4D4D"
+        app:strokeColor="#FF4D4D"
+        app:strokeWidth="1.5dp"
+        app:cornerRadius="10dp" />
+
+    <!-- 2. Status message description card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_match_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/card_match_timeline"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="1.5dp"
+        app:strokeColor="#FFC107"
+        app:cardBackgroundColor="#0F0F0F">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_match_status_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Broadcasting Request... 📡"
+                android:textColor="#FFC107"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_match_status_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sending ride parameters to nearest active specialists..."
+                android:textColor="#80FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 3. Dispatch Checklist Timeline -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_match_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#20FFFFFF"
+        app:cardBackgroundColor="#0F0F0F">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISPATCH TIMELINE"
+                android:textColor="#FFC107"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/txt_timeline_step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓ Request broadcasted to nearest pros"
+                android:textColor="#FFC107"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_timeline_step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⌛ Waiting for provider response..."
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/txt_timeline_step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="○ Specialist en route"
+                android:textColor="#4E4E4E"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 4. SUCCESS MATCHED PRO CARD (Initially hidden) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_match_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#FFC107"
+        app:cardBackgroundColor="#0F0F0F"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎉 Match Secured! 🎉"
+                android:textColor="#FFC107"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_matched_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_workbee_logo"
+                android:layout_marginTop="16dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFC107" />
+
+            <TextView
+                android:id="@+id/txt_matched_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elena's Deep Cleaning"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txt_matched_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.8 ★ Vibe Level V Certified"
+                android:textColor="#FFC107"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#20FFFFFF"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🚗 Dispatch ETA:"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txt_matched_eta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 6 mins (on the way)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- Option 2: Live Google Maps Route Map -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:strokeWidth="1.5dp"
+                app:strokeColor="#FFC107"
+                app:cardBackgroundColor="#060606">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/map_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <!-- Overlaying gradient overlay to blend map seamlessly with carbon dashboard -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#15000000"
+                        android:clickable="false" />
+
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cancel_match"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:text="Cancel ✕"
+                    android:textColor="#FF4D4D"
+                    app:strokeColor="#FF4D4D"
+                    app:strokeWidth="1.5dp"
+                    app:cornerRadius="10dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_message_pro"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:text="Message Pro 💬"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:backgroundTint="#FFC107"
+                    app:cornerRadius="10dp" />
+            </LinearLayout>
+
+            <!-- LIVE TRACKING BUTTON — shown after match -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_track_live"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:text="📍  Track Worker Live"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="#FF8C00"
+                app:cornerRadius="12dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
+

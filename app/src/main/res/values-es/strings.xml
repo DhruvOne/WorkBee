@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WorkBee</string>
+    <string name="slogan">Su Hogar, Nuestro Cuidado</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Encuentre Ayuda Experta</string>
+    <string name="onboarding_desc_1">Explore profesionales locales verificados para plomería, electricidad, limpieza y más al instante.</string>
+    <string name="onboarding_title_2">Reserva Fácil y Segura</string>
+    <string name="onboarding_desc_2">Programe visitas a su conveniencia. Autenticación digital segura y tarifas transparentes.</string>
+    <string name="onboarding_title_3">Servicio de Calidad Garantizado</string>
+    <string name="onboarding_desc_3">Cada proveedor está verificado. Realice el seguimiento en tiempo real y lea opiniones.</string>
+    <string name="get_started">Empezar</string>
+    <string name="next">Siguiente</string>
+    <string name="skip">Omitir</string>
+
+    <!-- Auth -->
+    <string name="login_title">Bienvenido</string>
+    <string name="login_subtitle">Inicie sesión para estar conectado con WorkBee</string>
+    <string name="register_title">Únase a WorkBee</string>
+    <string name="register_subtitle">Cree una cuenta para reservar servicios o empezar a trabajar</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="confirm_password_hint">Confirmar contraseña</string>
+    <string name="forgot_password">¿Olvidó su contraseña?</string>
+    <string name="login_btn">Iniciar sesión</string>
+    <string name="register_btn">Regístrese ahora</string>
+    <string name="google_sign_in">Continuar con Google</string>
+    <string name="dont_have_account">¿No tiene una cuenta? Regístrese</string>
+    <string name="already_have_account">¿Ya tiene una cuenta? Inicie sesión</string>
+    <string name="forgot_pwd_title">Restablecer contraseña</string>
+    <string name="forgot_pwd_desc">Ingrese su correo y le enviaremos un enlace de recuperación.</string>
+    <string name="send_reset_link">Enviar enlace de restablecimiento</string>
+    
+    <!-- Roles -->
+    <string name="customer_role">Cliente</string>
+    <string name="provider_role">Proveedor de Servicios</string>
+    
+    <!-- Extra -->
+    <string name="business_name_hint">Nombre del negocio (ej. John\'s Plumbing)</string>
+    <string name="experience_hint">Experiencia (en años)</string>
+    <string name="hourly_rate_hint">Tarifa por hora (₹/hora)</string>
+    <string name="bio_hint">Biografía breve / descripción</string>
+    
+    <!-- Dashboard -->
+    <string name="hello_user">¡Hola, %s!</string>
+    <string name="what_service_today">¿Qué servicio necesita hoy?</string>
+    <string name="search_services_hint">Buscar plomero, limpiador, electricista...</string>
+    <string name="categories">Categorías</string>
+    <string name="view_all">Ver todo</string>
+    <string name="featured_providers">Principales Proveedores</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_bookings">Reservas</string>
+    <string name="nav_profile">Perfil</string>
+    
+    <!-- Bookings Status -->
+    <string name="active_bookings">Activo</string>
+    <string name="completed_bookings">Completado</string>
+    <string name="cancelled_bookings">Cancelado</string>
+    
+    <!-- Details -->
+    <string name="rating_count">%1$s (%2$d opiniones)</string>
+    <string name="about_provider">Acerca del Proveedor</string>
+    <string name="reviews">Opiniones</string>
+    <string name="book_now">Reservar Ahora</string>
+    
+    <!-- Checkout Flow -->
+    <string name="select_date_time">Seleccionar Fecha y Hora</string>
+    <string name="service_details">Detalles del Servicio</string>
+    <string name="describe_problem_hint">Describa el trabajo requerido...</string>
+    <string name="service_address_hint">Dirección del Servicio</string>
+    <string name="price_summary">Resumen de Precios</string>
+    <string name="base_rate">Tarifa Base</string>
+    <string name="service_fee">Tarifa de Servicio (10%)</string>
+    <string name="total_price">Total General</string>
+    <string name="confirm_booking">Confirmar Reserva</string>
+
+    <!-- Panels -->
+    <string name="provider_dashboard">Panel de Proveedor</string>
+    <string name="provider_jobs">Lista de Trabajos</string>
+    <string name="availability_title">Disponible para Trabajos</string>
+    <string name="earnings_title">Ganancias Totales</string>
+    
+    <string name="admin_dashboard">Panel de Control Admin</string>
+    <string name="total_users">Total Usuarios</string>
+    <string name="total_providers">Total Proveedores</string>
+    <string name="total_bookings">Total Reservas</string>
+    <string name="total_earnings">Participación de Ingresos</string>
+</resources>

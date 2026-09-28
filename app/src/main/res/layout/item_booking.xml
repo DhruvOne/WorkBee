@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/grey_100"
+    app:cardBackgroundColor="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Category header -->
+            <TextView
+                android:id="@+id/txt_booking_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plumbing Repair"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondary" />
+
+            <!-- Price right -->
+            <TextView
+                android:id="@+id/txt_booking_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="₹108.00"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondary" />
+        </RelativeLayout>
+
+        <!-- Provider Name -->
+        <TextView
+            android:id="@+id/txt_booking_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by Miller Plumbing Services"
+            android:textSize="13sp"
+            android:textColor="@color/grey_600"
+            android:layout_marginTop="2dp" />
+
+        <!-- Divider line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_100"
+            android:layout_marginVertical="12dp" />
+
+        <!-- Date & Slot details -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/txt_booking_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date: May 24, 2026"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_800"
+                    android:drawableStart="@android:drawable/ic_menu_today"
+                    android:drawablePadding="6dp" />
+
+                <TextView
+                    android:id="@+id/txt_booking_slot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time: 10:00 AM - 12:00 PM"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_800"
+                    android:drawableStart="@android:drawable/ic_menu_recent_history"
+                    android:drawablePadding="6dp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:id="@+id/txt_booking_payment_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment: Cash on Service"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_800"
+                    android:drawableStart="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="6dp"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <!-- Colored pill representing status -->
+            <TextView
+                android:id="@+id/txt_booking_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_status_completed"
+                android:text="COMPLETED"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp" />
+
+        </RelativeLayout>
+
+        <!-- Rate action button (Only COMPLETED and NOT RATED) -->
+        <Button
+            android:id="@+id/btn_rate_booking"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Write Review &amp; Rate Provider"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/primary"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

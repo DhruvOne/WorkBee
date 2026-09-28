@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#1EFFFFFF"
+    app:cardBackgroundColor="#0D0D0D"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:gravity="center_vertical">
+
+        <!-- Provider Avatar with verified badge -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_provider"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/ic_workbee_logo"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFC107" />
+
+            <!-- Verified Yellow check stinger checkmark badge overlay -->
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="✓"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle_yellow"
+                android:layout_alignEnd="@id/img_provider"
+                android:layout_alignBottom="@id/img_provider"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp" />
+
+        </RelativeLayout>
+
+        <!-- Middle Content Panel -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="8dp">
+
+            <!-- Category Badge -->
+            <TextView
+                android:id="@+id/txt_provider_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_badge_yellow"
+                android:text="✨ CLEANING"
+                android:textColor="@color/black"
+                android:textSize="8.5sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp" />
+
+            <!-- Business Name -->
+            <TextView
+                android:id="@+id/txt_provider_business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elena's Premium Cleaning"
+                android:textSize="15.5sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="6dp" />
+
+            <!-- Provider Owner Name -->
+            <TextView
+                android:id="@+id/txt_provider_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elena Rostova"
+                android:textSize="12sp"
+                android:textColor="#A0A0A0"
+                android:layout_marginTop="1dp" />
+
+            <!-- Experience and Rating row -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="6dp">
+
+                <!-- Star Icon & Rating -->
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@android:drawable/btn_star_big_on"
+                    app:tint="#FFC107"
+                    android:contentDescription="Rating" />
+
+                <TextView
+                    android:id="@+id/txt_provider_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 4.7"
+                    android:textSize="11.5sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txt_provider_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" (24 reviews)"
+                    android:textSize="11sp"
+                    android:textColor="#A0A0A0" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="3dp"
+                    android:background="#33FFFFFF"
+                    android:layout_marginHorizontal="6dp" />
+
+                <TextView
+                    android:id="@+id/txt_provider_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 yrs exp"
+                    android:textSize="11sp"
+                    android:textColor="#A0A0A0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Right Side Panel Pricing & Action -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <!-- Pricing -->
+            <TextView
+                android:id="@+id/txt_provider_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹35"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/ hr"
+                android:textSize="11sp"
+                android:textColor="#A0A0A0"
+                android:layout_marginTop="-2dp" />
+
+            <!-- Green Location Distance Pill -->
+            <TextView
+                android:id="@+id/txt_provider_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍 0.5 mi"
+                android:textSize="10.5sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/bg_status_completed"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

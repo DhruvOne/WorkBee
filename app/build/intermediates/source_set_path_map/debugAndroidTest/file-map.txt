@@ -1,0 +1,6 @@
+com.workbee.app.test.app-jetified-core-1.5.0-0 C:\Users\shaik\.gradle\caches\9.0-milestone-1\transforms\2460b3d56b5e33059ed2686f4c47af38\transformed\jetified-core-1.5.0\res
+com.workbee.app.test.app-jetified-annotation-experimental-1.3.0-1 C:\Users\shaik\.gradle\caches\9.0-milestone-1\transforms\85c0149ca1ffbfc0955c89b031a1b07d\transformed\jetified-annotation-experimental-1.3.0\res
+com.workbee.app.test.app-androidTest-2 C:\Users\shaik\OneDrive\Desktop\WorkBee\app\build\generated\res\resValues\androidTest\debug
+com.workbee.app.test.app-mergeDebugAndroidTestResources-3 C:\Users\shaik\OneDrive\Desktop\WorkBee\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.workbee.app.test.app-mergeDebugAndroidTestResources-4 C:\Users\shaik\OneDrive\Desktop\WorkBee\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.workbee.app.test.app-merged_res-5 C:\Users\shaik\OneDrive\Desktop\WorkBee\app\build\intermediates\merged_res\debugAndroidTest

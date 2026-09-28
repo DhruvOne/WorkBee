@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="10dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#15FFFFFF"
+    app:cardBackgroundColor="#0D0D0D">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Rank number circles -->
+        <TextView
+            android:id="@+id/lbl_rank_num"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_circle_yellow"
+            android:backgroundTint="#20FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Emojis representing rank tier -->
+        <TextView
+            android:id="@+id/lbl_rank_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👑"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/lbl_rank_num"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/lbl_rank_emoji"
+            android:layout_toStartOf="@id/layout_rank_score"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/lbl_rank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sarah K. (Cleaning Pro)"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="12.5sp" />
+
+            <TextView
+                android:id="@+id/lbl_rank_tier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Platinum Tier"
+                android:textColor="#FFC107"
+                android:textSize="9.5sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <!-- Right Side aligned score metrics -->
+        <LinearLayout
+            android:id="@+id/layout_rank_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/lbl_rank_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1480 HP"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hive Points"
+                android:textColor="#80FFFFFF"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

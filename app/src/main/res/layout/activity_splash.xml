@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_splash.xml — Premium Animated Splash Screen
+    Dark pitch-black background with flying bee container overlays,
+    a pulsing hexagonal WorkBee logo, and a golden honeycomb shimmer.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- ===== Flying Bees Layer (programmatically animated in Java) ===== -->
+
+    <!-- Bee 1 — top left flight path -->
+    <TextView
+        android:id="@+id/bee1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🐝"
+        android:textSize="28sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp" />
+
+    <!-- Bee 2 — top right -->
+    <TextView
+        android:id="@+id/bee2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🐝"
+        android:textSize="22sp"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="200dp" />
+
+    <!-- Bee 3 — middle left -->
+    <TextView
+        android:id="@+id/bee3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🐝"
+        android:textSize="18sp"
+        android:layout_marginStart="60dp"
+        android:layout_gravity="center_vertical"
+        android:translationY="-100dp" />
+
+    <!-- Bee 4 — lower right -->
+    <TextView
+        android:id="@+id/bee4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🐝"
+        android:textSize="24sp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="220dp" />
+
+    <!-- Bee 5 — small top center -->
+    <TextView
+        android:id="@+id/bee5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🐝"
+        android:textSize="16sp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="80dp" />
+
+    <!-- Bee 6 — lower left -->
+    <TextView
+        android:id="@+id/bee6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🐝"
+        android:textSize="20sp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="180dp" />
+
+    <!-- ===== Golden honeycomb shimmer rings ===== -->
+
+    <!-- Outer ring glow -->
+    <android.view.View
+        android:id="@+id/ring_outer"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_splash_ring_outer"
+        android:alpha="0.15" />
+
+    <!-- Middle ring glow -->
+    <android.view.View
+        android:id="@+id/ring_mid"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_splash_ring_mid"
+        android:alpha="0.25" />
+
+    <!-- ===== Center logo card ===== -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <!-- Circular logo container -->
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center">
+
+            <!-- White circle background -->
+            <android.view.View
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/bg_splash_logo_circle" />
+
+            <!-- WorkBee Logo -->
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_workbee_logo"
+                android:contentDescription="WorkBee Logo" />
+        </FrameLayout>
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WorkBee"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#FFC107"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.05" />
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/txt_tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Trusted Service Partner 🍯"
+            android:textSize="13sp"
+            android:textColor="#80FFFFFF"
+            android:letterSpacing="0.15"
+            android:layout_marginTop="6dp" />
+
+    </LinearLayout>
+
+    <!-- ===== Bottom honey drip dots progress ===== -->
+    <LinearLayout
+        android:id="@+id/layout_progress_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/dot1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_dot_active"
+            android:layout_marginHorizontal="5dp" />
+
+        <View
+            android:id="@+id/dot2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_dot_inactive"
+            android:layout_marginHorizontal="5dp" />
+
+        <View
+            android:id="@+id/dot3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_dot_inactive"
+            android:layout_marginHorizontal="5dp" />
+    </LinearLayout>
+
+</FrameLayout>

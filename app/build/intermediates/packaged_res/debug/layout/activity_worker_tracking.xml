@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D0D">
+
+    <!-- ══════════════ FULL-SCREEN MAP ══════════════ -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/worker_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- ══════════════ TOP STATUS BAR ══════════════ -->
+    <LinearLayout
+        android:id="@+id/worker_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingTop="48dp"
+        android:background="@drawable/gradient_dark_top"
+        app:layout_anchor="@id/worker_map_view"
+        app:layout_anchorGravity="top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/worker_btn_back"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_circle_dark_translucent"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Back"
+                android:padding="10dp" />
+
+            <ImageButton
+                android:id="@+id/worker_btn_call"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_circle_dark_translucent"
+                android:src="@android:drawable/stat_sys_phone_call"
+                app:tint="#FFC107"
+                android:contentDescription="Call"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/worker_txt_job_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🐝 Job Accepted — Navigate to Customer"
+                    android:textColor="#FFC107"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/worker_txt_customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Location"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-bold" />
+
+            </LinearLayout>
+
+            <!-- Live GPS indicator -->
+            <View
+                android:id="@+id/worker_gps_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/bg_circle_green"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIVE"
+                android:textColor="#4CAF50"
+                android:textSize="10sp"
+                android:fontFamily="sans-serif-bold"
+                android:letterSpacing="0.1" />
+
+        </LinearLayout>
+
+        <!-- Traffic Status Banner -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/worker_traffic_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#23FFC107"
+            app:cardBackgroundColor="#CC0D0D0D"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/worker_txt_traffic_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🚦 Traffic is clear. Making swift progress! ⚡"
+                    android:textColor="#FFC107"
+                    android:textSize="11sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <!-- ══════════════ BOTTOM CONTROL PANEL ══════════════ -->
+    <LinearLayout
+        android:id="@+id/worker_bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E6000000"
+        android:paddingTop="20dp"
+        android:paddingBottom="32dp"
+        android:paddingHorizontal="20dp"
+        android:elevation="12dp"
+        app:layout_anchor="@id/worker_map_view"
+        app:layout_anchorGravity="bottom">
+
+        <!-- ETA Info Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- ETA Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card_dark_rounded"
+                android:padding="14dp"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ETA"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="10sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.15" />
+
+                <TextView
+                    android:id="@+id/worker_txt_eta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8 min"
+                    android:textColor="#FFC107"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-bold" />
+
+            </LinearLayout>
+
+            <!-- Distance Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card_dark_rounded"
+                android:padding="14dp"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DISTANCE"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="10sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.15" />
+
+                <TextView
+                    android:id="@+id/worker_txt_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.2 km"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-bold" />
+
+            </LinearLayout>
+
+            <!-- Speed Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card_dark_rounded"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STATUS"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="10sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.15" />
+
+                <TextView
+                    android:id="@+id/worker_txt_status_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accepted"
+                    android:textColor="#4CAF50"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Customer Address -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_card_dark_rounded"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍"
+                android:textSize="18sp"
+                android:layout_marginEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DESTINATION"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="9sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.15" />
+
+                <TextView
+                    android:id="@+id/worker_txt_customer_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading address..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/worker_btn_on_the_way"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🚗  I'm On the Way!"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-bold"
+            app:backgroundTint="#FFC107"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="14dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/worker_btn_arrived"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🏠  I've Arrived!"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-bold"
+            app:backgroundTint="#FF8C00"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="14dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/worker_btn_complete"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="✅  Mark Job Complete"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-bold"
+            app:backgroundTint="#4CAF50"
+            app:cornerRadius="14dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <!-- Emergency SOS Button -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_sos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="350dp"
+        android:text="Emergency SOS 🚨"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:backgroundTint="#FF3B30"
+        app:icon="@android:drawable/ic_dialog_alert"
+        app:iconTint="#FFFFFF"
+        app:elevation="6dp" />
+
+    <!-- Confetti Overlay particle canvas -->
+    <com.workbee.app.ui.common.ConfettiView
+        android:id="@+id/worker_confetti_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="30dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

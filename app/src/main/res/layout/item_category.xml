@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginVertical="10dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Hexagon or Circle Container for Icon -->
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_circle_yellow"
+        android:layout_marginBottom="6dp">
+
+        <!-- General placeholder image/icon -->
+        <ImageView
+            android:id="@+id/img_cat_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_workbee_logo" />
+
+        <TextView
+            android:id="@+id/txt_cat_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_cat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plumbing"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="28dp"
+    app:strokeWidth="1.5dp"
+    app:strokeColor="#33FFC107"
+    app:cardBackgroundColor="#1A0A0A0A"
+    style="@style/Widget.MaterialComponents.CardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Top drag handle -->
+        <View
+            android:layout_width="44dp"
+            android:layout_height="4dp"
+            android:background="#20FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Status Header -->
+        <TextView
+            android:id="@+id/call_txt_status_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔒 SECURED In-App Call"
+            android:textColor="#80FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/call_txt_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ringing..."
+            android:textColor="#FFC107"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Concentric Pulsing Avatar Container -->
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="28dp">
+
+            <!-- Pulsing Rings (Animated scale & alpha) -->
+            <View
+                android:id="@+id/call_ring2"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_circle_dark_translucent"
+                android:alpha="0.2" />
+
+            <View
+                android:id="@+id/call_ring1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_circle_dark_translucent"
+                android:alpha="0.4" />
+
+            <!-- Profile Photo -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/call_img_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_workbee_logo"
+                app:civ_border_width="2.5dp"
+                app:civ_border_color="#FFC107" />
+        </RelativeLayout>
+
+        <!-- Dynamic Call Name -->
+        <TextView
+            android:id="@+id/call_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elena Rostova"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/call_txt_vibe_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✓ Vibe Level V certified"
+            android:textColor="#FF8C00"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Glass Audio Wave Visualization (Simulated bars) -->
+        <LinearLayout
+            android:id="@+id/call_layout_voice_wave"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="36dp"
+            android:alpha="0.0">
+
+            <View android:id="@+id/wave_bar1" android:layout_width="3dp" android:layout_height="12dp" android:layout_marginHorizontal="2.5dp" android:background="#FFC107" />
+            <View android:id="@+id/wave_bar2" android:layout_width="3dp" android:layout_height="22dp" android:layout_marginHorizontal="2.5dp" android:background="#FFC107" />
+            <View android:id="@+id/wave_bar3" android:layout_width="3dp" android:layout_height="8dp" android:layout_marginHorizontal="2.5dp" android:background="#FFC107" />
+            <View android:id="@+id/wave_bar4" android:layout_width="3dp" android:layout_height="28dp" android:layout_marginHorizontal="2.5dp" android:background="#FFC107" />
+            <View android:id="@+id/wave_bar5" android:layout_width="3dp" android:layout_height="14dp" android:layout_marginHorizontal="2.5dp" android:background="#FFC107" />
+            <View android:id="@+id/wave_bar6" android:layout_width="3dp" android:layout_height="20dp" android:layout_marginHorizontal="2.5dp" android:background="#FFC107" />
+            <View android:id="@+id/wave_bar7" android:layout_width="3dp" android:layout_height="10dp" android:layout_marginHorizontal="2.5dp" android:background="#FFC107" />
+        </LinearLayout>
+
+        <!-- Call Buttons Grid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <!-- Mute Option -->
+            <LinearLayout
+                android:id="@+id/call_layout_mute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/call_card_mute"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    app:cardCornerRadius="27dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#20FFFFFF"
+                    app:cardBackgroundColor="#121212"
+                    android:layout_marginBottom="6dp">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_btn_speak_now"
+                        app:tint="@color/white" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mute"
+                    android:textColor="#A0FFFFFF"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- Red End Call Button -->
+            <LinearLayout
+                android:id="@+id/call_layout_hangup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    app:cardCornerRadius="34dp"
+                    app:strokeWidth="1.5dp"
+                    app:strokeColor="#F44336"
+                    app:cardBackgroundColor="#F44336"
+                    android:layout_marginBottom="6dp">
+                    <!-- Standard clear call end visual -->
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="@color/white" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Call"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Speaker Option -->
+            <LinearLayout
+                android:id="@+id/call_layout_speaker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/call_card_speaker"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    app:cardCornerRadius="27dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#20FFFFFF"
+                    app:cardBackgroundColor="#121212"
+                    android:layout_marginBottom="6dp">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_lock_silent_mode_off"
+                        app:tint="@color/white" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Speaker"
+                    android:textColor="#A0FFFFFF"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

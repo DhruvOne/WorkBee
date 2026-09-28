@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#000000</color>
+    <color name="background_dark">#121212</color>
+    <color name="black">#000000</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_800">#424242</color>
+    <color name="on_primary">#000000</color>
+    <color name="on_secondary">#000000</color>
+    <color name="primary">#FFC107</color>
+    <color name="primary_dark">#FF8F00</color>
+    <color name="primary_light">#FFE082</color>
+    <color name="secondary">#FFFFFF</color>
+    <color name="secondary_dark">#FFFFFF</color>
+    <color name="secondary_light">#E0E0E0</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="semi_transparent_yellow">#1AFFC107</color>
+    <color name="status_accepted">#1E88E5</color>
+    <color name="status_cancelled">#E53935</color>
+    <color name="status_completed">#4CAF50</color>
+    <color name="status_in_progress">#8E24AA</color>
+    <color name="status_pending">#FFB300</color>
+    <color name="status_rejected">#D32F2F</color>
+    <color name="surface">#0A0A0A</color>
+    <color name="surface_card">#0D0D0D</color>
+    <color name="surface_card_dark">#252525</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="white">#FFFFFF</color>
+    <string name="about_provider">About</string>
+    <string name="active_bookings">Active</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="already_have_account">Already have an account? Sign In</string>
+    <string name="app_name">WorkBee</string>
+    <string name="availability_title">Available for Jobs</string>
+    <string name="base_rate">Base Rate</string>
+    <string name="bio_hint">Short Bio / Description</string>
+    <string name="book_now">Book Now</string>
+    <string name="business_name_hint">Business Name (e.g. John\'s Plumbing)</string>
+    <string name="cancelled_bookings">Cancelled</string>
+    <string name="categories">Categories</string>
+    <string name="completed_bookings">Completed</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="customer_role">Customer</string>
+    <string name="describe_problem_hint">Describe the work required...</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="earnings_title">Total Earnings</string>
+    <string name="email_hint">Email Address</string>
+    <string name="experience_hint">Experience (in years)</string>
+    <string name="featured_providers">Top Service Providers</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_pwd_desc">Enter your email and we\'ll send a password recovery link.</string>
+    <string name="forgot_pwd_title">Reset Password</string>
+    <string name="gcm_defaultSenderId" translatable="false">123456789012</string>
+    <string name="get_started">Get Started</string>
+    <string name="google_api_key" translatable="false">AIzaSyFakeKeyForSimulationPurposeOnly</string>
+    <string name="google_app_id" translatable="false">1:123456789012:android:a1b2c3d4e5f6g7h8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyFakeKeyForSimulationPurposeOnly</string>
+    <string name="google_sign_in">Continue with Google</string>
+    <string name="google_storage_bucket" translatable="false">workbee-simulated.appspot.com</string>
+    <string name="hello_user">Hello, %s!</string>
+    <string name="hourly_rate_hint">Hourly Rate (₹/hr)</string>
+    <string name="login_btn">Sign In</string>
+    <string name="login_subtitle">Sign in to stay connected with WorkBee</string>
+    <string name="login_title">Welcome Back</string>
+    <string name="nav_bookings">Bookings</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+    <string name="next">Next</string>
+    <string name="onboarding_desc_1">Browse verified local professionals for plumbing, electrical, cleaning, and more instantly.</string>
+    <string name="onboarding_desc_2">Schedule visits at your convenience. Secure digital authentication and transparent pricing.</string>
+    <string name="onboarding_desc_3">Every provider is vetted. Track real-time booking status and read verified user reviews.</string>
+    <string name="onboarding_title_1">Find Expert Help</string>
+    <string name="onboarding_title_2">Easy &amp; Secure Booking</string>
+    <string name="onboarding_title_3">Quality Service Guaranteed</string>
+    <string name="password_hint">Password</string>
+    <string name="price_summary">Pricing Summary</string>
+    <string name="project_id" translatable="false">workbee-simulated</string>
+    <string name="provider_dashboard">Provider Panel</string>
+    <string name="provider_jobs">Jobs List</string>
+    <string name="provider_role">Service Provider</string>
+    <string name="rating_count">%1₹s (%2₹d reviews)</string>
+    <string name="register_btn">Register Now</string>
+    <string name="register_subtitle">Create an account to start bookings or services</string>
+    <string name="register_title">Join WorkBee</string>
+    <string name="reviews">Reviews</string>
+    <string name="search_services_hint">Search plumber, cleaner, electrician...</string>
+    <string name="select_date_time">Select Date &amp; Time</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="service_address_hint">Service Address</string>
+    <string name="service_details">Service Details</string>
+    <string name="service_fee">Service Fee (10%)</string>
+    <string name="skip">Skip</string>
+    <string name="slogan">Your Home, Our Care</string>
+    <string name="total_bookings">Total Bookings</string>
+    <string name="total_earnings">Revenue Share</string>
+    <string name="total_price">Total</string>
+    <string name="total_providers">Total Providers</string>
+    <string name="total_users">Total Users</string>
+    <string name="view_all">View All</string>
+    <string name="what_service_today">What service do you need today?</string>
+    <style name="Theme.WorkBee" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_light</item>
+        <item name="colorOnPrimaryContainer">@color/black</item>
+
+        
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorSecondaryContainer">@color/grey_300</item>
+        <item name="colorOnSecondaryContainer">@color/black</item>
+
+        
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/background</item>
+        
+        
+        <item name="fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="Theme.WorkBee.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_dark</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+
+        <item name="colorSecondary">@color/surface_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/grey_800</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+    </style>
+    <style name="Theme_App_BottomNavigationView">
+        <item name="colorContainer">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WorkBee</string>
+    <string name="slogan">आपका घर, हमारी देखभाल</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">विशेषज्ञ सहायता खोजें</string>
+    <string name="onboarding_desc_1">प्लंबिंग, इलेक्ट्रिकल, क्लीनिंग और बहुत कुछ के लिए सत्यापित स्थानीय पेशेवरों को तुरंत खोजें।</string>
+    <string name="onboarding_title_2">आसान और सुरक्षित बुकिंग</string>
+    <string name="onboarding_desc_2">अपनी सुविधा अनुसार अपॉइंटमेंट बुक करें। डिजिटल सत्यापन और पारदर्शी दरें।</string>
+    <string name="onboarding_title_3">गुणवत्तापूर्ण सेवा की गारंटी</string>
+    <string name="onboarding_desc_3">प्रत्येक प्रदाता सत्यापित है। वास्तविक समय में ट्रैक करें और रेटिंग जांचें।</string>
+    <string name="get_started">शुरू करें</string>
+    <string name="next">अगला</string>
+    <string name="skip">छोड़ें</string>
+
+    <!-- Auth -->
+    <string name="login_title">स्वागत है</string>
+    <string name="login_subtitle">WorkBee से जुड़े रहने के लिए लॉग इन करें</string>
+    <string name="register_title">WorkBee में शामिल हों</string>
+    <string name="register_subtitle">सेवाएं बुक करने या काम शुरू करने के लिए पंजीकरण करें</string>
+    <string name="email_hint">ईमेल पता</string>
+    <string name="password_hint">पासवर्ड</string>
+    <string name="confirm_password_hint">पासवर्ड की पुष्टि करें</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="login_btn">साइन इन करें</string>
+    <string name="register_btn">अभी रजिस्टर करें</string>
+    <string name="google_sign_in">गूगल के साथ जारी रखें</string>
+    <string name="dont_have_account">खाता नहीं है? रजिस्टर करें</string>
+    <string name="already_have_account">पहले से ही खाता है? साइन इन करें</string>
+    <string name="forgot_pwd_title">पासवर्ड रीसेट करें</string>
+    <string name="forgot_pwd_desc">अपना ईमेल दर्ज करें और हम आपको रिकवरी लिंक भेजेंगे।</string>
+    <string name="send_reset_link">रीसेट लिंक भेजें</string>
+    
+    <!-- Roles -->
+    <string name="customer_role">ग्राहक</string>
+    <string name="provider_role">सेवा प्रदाता / कामगार</string>
+    
+    <!-- Extra -->
+    <string name="business_name_hint">व्यवसाय का नाम (जैसे जॉन प्लंबिंग)</string>
+    <string name="experience_hint">अनुभव (वर्षों में)</string>
+    <string name="hourly_rate_hint">प्रति घंटा दर (₹/घंटा)</string>
+    <string name="bio_hint">संक्षिप्त परिचय / विवरण</string>
+    
+    <!-- Dashboard -->
+    <string name="hello_user">नमस्ते, %s!</string>
+    <string name="what_service_today">आज आपको किस सेवा की आवश्यकता है?</string>
+    <string name="search_services_hint">प्लंबर, क्लीनर, इलेक्ट्रीशियन खोजें...</string>
+    <string name="categories">श्रेणियाँ</string>
+    <string name="view_all">सभी देखें</string>
+    <string name="featured_providers">शीर्ष सेवा प्रदाता</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">होम</string>
+    <string name="nav_bookings">बुकिंग</string>
+    <string name="nav_profile">प्रोफ़ाइल</string>
+    
+    <!-- Bookings Status -->
+    <string name="active_bookings">सक्रिय</string>
+    <string name="completed_bookings">पूरा हुआ</string>
+    <string name="cancelled_bookings">रद्द किया गया</string>
+    
+    <!-- Details -->
+    <string name="rating_count">%1$s (%2$d समीक्षाएं)</string>
+    <string name="about_provider">प्रदाता विवरण</string>
+    <string name="reviews">समीक्षाएं</string>
+    <string name="book_now">अभी बुक करें</string>
+    
+    <!-- Checkout Flow -->
+    <string name="select_date_time">दिनांक और समय चुनें</string>
+    <string name="service_details">सेवा का विवरण</string>
+    <string name="describe_problem_hint">आवश्यक कार्य का संक्षिप्त वर्णन करें...</string>
+    <string name="service_address_hint">सेवा का पता</string>
+    <string name="price_summary">मूल्य विवरण</string>
+    <string name="base_rate">मूल दर</string>
+    <string name="service_fee">सेवा शुल्क (10%)</string>
+    <string name="total_price">कुल राशि</string>
+    <string name="confirm_booking">बुकिंग की पुष्टि करें</string>
+
+    <!-- Panels -->
+    <string name="provider_dashboard">कामगार पैनल</string>
+    <string name="provider_jobs">कार्य सूची</string>
+    <string name="availability_title">कार्य के लिए उपलब्ध</string>
+    <string name="earnings_title">कुल कमाई</string>
+    
+    <string name="admin_dashboard">एडमिन डैशबोर्ड</string>
+    <string name="total_users">कुल उपयोगकर्ता</string>
+    <string name="total_providers">कुल कामगार</string>
+    <string name="total_bookings">कुल बुकिंग</string>
+    <string name="total_earnings">राजस्व हिस्सा</string>
+</resources>

@@ -1,0 +1,210 @@
+[
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_redeem_rewards.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_redeem_rewards.xml"
+    },
+    {
+        "merged": "com.workbee.app-mergeDebugResources-41:/layout/activity_beegold.xml",
+        "source": "com.workbee.app-main-44:/layout/activity_beegold.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\fragment_admin_providers.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\fragment_admin_providers.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\item_provider_job.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\item_provider_job.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\item_leaderboard_row.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\item_leaderboard_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\item_onboarding_slide.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\item_onboarding_slide.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\item_admin_provider_approval.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\item_admin_provider_approval.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_worker_tracking.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_worker_tracking.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_provider_list.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_provider_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_notification_tray.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_notification_tray.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\fragment_provider_jobs.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\fragment_provider_jobs.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_customer_tracking.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_customer_tracking.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_admin_main.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_admin_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_categories.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_categories.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_onboarding.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_uber_incoming.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_uber_incoming.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\fragment_bookings.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\fragment_bookings.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\fragment_admin_dashboard.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\fragment_admin_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_admin_ai.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_admin_ai.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_honeycomb_chat.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_honeycomb_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_customer_main.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_customer_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_add_category.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_add_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_golden_invoice.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_golden_invoice.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\fragment_provider_profile.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\fragment_provider_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_provider_details.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_provider_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_vibe_levelup.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_vibe_levelup.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\item_booking.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\item_booking.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_uber_match.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_uber_match.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_forgot_password.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_glass_call.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_glass_call.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_booking.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_booking.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_reviews.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_reviews.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_sos_alert.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_sos_alert.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_bee_ai.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_bee_ai.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\item_provider.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\item_provider.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_worker_tiers.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_worker_tiers.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_pro_ai.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_pro_ai.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\fragment_admin_categories.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\fragment_admin_categories.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_bee_ai_recommendation.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_bee_ai_recommendation.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\dialog_bee_visual.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\dialog_bee_visual.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\fragment_provider_dashboard.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\fragment_provider_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\item_review.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\item_review.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_beegold.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_beegold.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\item_category.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\item_provider_job_request.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\item_provider_job_request.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\activity_bee_ai_hub.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\activity_bee_ai_hub.xml"
+    },
+    {
+        "merged": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-mergeDebugResources-41:\\layout\\item_wallet_ledger.xml",
+        "source": "C:\\Users\\shaik\\.gradle\\daemon\\9.0-milestone-1\\com.workbee.app-main-44:\\layout\\item_wallet_ledger.xml"
+    }
+]

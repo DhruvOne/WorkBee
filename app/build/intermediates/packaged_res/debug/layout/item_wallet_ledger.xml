@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_wallet_ledger.xml
+    Honeycomb Wallet Timeline Ledger Cell — Worker Level/Earnings history entry row.
+    Each cell represents one earnings event (booking completed, bonus earned, cash out).
+    Dark glassmorphic style, golden accents, hexagonal icon badge.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    android:paddingHorizontal="16dp">
+
+    <!-- Vertical honeycomb timeline spine line (left axis) -->
+    <View
+        android:id="@+id/wallet_timeline_line"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#30FFC107"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_above="@id/wallet_card_content"
+        android:layout_below="@id/wallet_icon_badge" />
+
+    <!-- Hexagonal golden icon node badge on the timeline axis -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/wallet_icon_badge"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="12dp"
+        app:strokeWidth="1.5dp"
+        app:strokeColor="#FFC107"
+        app:cardBackgroundColor="#111111">
+
+        <TextView
+            android:id="@+id/wallet_icon_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="🍯"
+            android:textSize="18sp"
+            android:gravity="center" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Main ledger entry content card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/wallet_card_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/wallet_icon_badge"
+        android:layout_marginStart="12dp"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="14dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#1AFFC107"
+        app:cardBackgroundColor="#0D0D0D">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <!-- Transaction Title -->
+            <TextView
+                android:id="@+id/wallet_txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Completed ✅"
+                android:textColor="@android:color/white"
+                android:textSize="13.5sp"
+                android:textStyle="bold"
+                android:layout_toStartOf="@id/wallet_txt_amount"
+                android:layout_marginEnd="12dp" />
+
+            <!-- HP/Amount badge (top right) -->
+            <TextView
+                android:id="@+id/wallet_txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+₹45.00"
+                android:textColor="#FFC107"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true" />
+
+            <!-- Category sub-label -->
+            <TextView
+                android:id="@+id/wallet_txt_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House Maid • 2.0 hrs"
+                android:textColor="#80FFFFFF"
+                android:textSize="11sp"
+                android:layout_below="@id/wallet_txt_title"
+                android:layout_marginTop="2dp" />
+
+            <!-- HP Points earned indicator -->
+            <TextView
+                android:id="@+id/wallet_txt_hp_earned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+50 HP 🐝"
+                android:textColor="#FFC107"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_below="@id/wallet_txt_category"
+                android:layout_marginTop="4dp" />
+
+            <!-- Timestamp -->
+            <TextView
+                android:id="@+id/wallet_txt_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="May 20, 2026 • 10:30 AM"
+                android:textColor="#4E4E4E"
+                android:textSize="10sp"
+                android:layout_below="@id/wallet_txt_category"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D0D">
+
+    <!-- ══════════════ FULL-SCREEN MAP ══════════════ -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/customer_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- ══════════════ TOP STATUS BANNER ══════════════ -->
+    <LinearLayout
+        android:id="@+id/customer_top_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="48dp"
+        android:paddingBottom="16dp"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/gradient_dark_top"
+        app:layout_anchor="@id/customer_map_view"
+        app:layout_anchorGravity="top">
+
+        <!-- Row: Back + Title + Live badge -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/customer_btn_back"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_circle_dark_translucent"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Back"
+                android:padding="10dp" />
+
+            <ImageButton
+                android:id="@+id/customer_btn_call"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_circle_dark_translucent"
+                android:src="@android:drawable/stat_sys_phone_call"
+                app:tint="#FFC107"
+                android:contentDescription="Call"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WorkBee — Live Tracking"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="11sp"
+                    android:fontFamily="sans-serif"
+                    android:letterSpacing="0.05" />
+
+                <TextView
+                    android:id="@+id/customer_txt_worker_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WorkBee Pro Specialist"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:fontFamily="sans-serif-bold" />
+
+            </LinearLayout>
+
+            <!-- Live badge pill -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_live_pill"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp">
+
+                <View
+                    android:id="@+id/customer_live_dot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/bg_circle_green"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIVE"
+                    android:textColor="#4CAF50"
+                    android:textSize="10sp"
+                    android:fontFamily="sans-serif-bold"
+                    android:letterSpacing="0.1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Status progress strip -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:id="@+id/customer_step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓ Accepted"
+                android:textColor="#FFC107"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-bold" />
+
+            <View
+                android:id="@+id/customer_step_line1"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="#FFC107"
+                android:layout_marginHorizontal="6dp" />
+
+            <TextView
+                android:id="@+id/customer_step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On the Way"
+                android:textColor="#40FFFFFF"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <View
+                android:id="@+id/customer_step_line2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="#30FFFFFF"
+                android:layout_marginHorizontal="6dp" />
+
+            <TextView
+                android:id="@+id/customer_step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrived"
+                android:textColor="#40FFFFFF"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <View
+                android:id="@+id/customer_step_line3"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="#30FFFFFF"
+                android:layout_marginHorizontal="6dp" />
+
+            <TextView
+                android:id="@+id/customer_step4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done ✅"
+                android:textColor="#40FFFFFF"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <!-- Traffic Status Banner -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/customer_traffic_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#23FFC107"
+            app:cardBackgroundColor="#CC0D0D0D"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/customer_txt_traffic_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🚦 Traffic is clear. Making swift progress! ⚡"
+                    android:textColor="#FFC107"
+                    android:textSize="11sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <!-- ══════════════ BOTTOM INFO CARD ══════════════ -->
+    <LinearLayout
+        android:id="@+id/customer_bottom_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E6000000"
+        android:paddingTop="20dp"
+        android:paddingBottom="36dp"
+        android:paddingHorizontal="20dp"
+        android:elevation="12dp"
+        app:layout_anchor="@id/customer_map_view"
+        app:layout_anchorGravity="bottom">
+
+        <!-- Worker info header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/customer_img_worker_avatar"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/ic_workbee_logo"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFC107"
+                android:layout_marginEnd="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/customer_txt_worker_name_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WorkBee Pro Specialist"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-bold" />
+
+                <TextView
+                    android:id="@+id/customer_txt_worker_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Service"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+            <!-- Status label -->
+            <TextView
+                android:id="@+id/customer_txt_status_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accepted"
+                android:textColor="#FFC107"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-bold"
+                android:background="@drawable/bg_status_pill_amber"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp" />
+
+        </LinearLayout>
+
+        <!-- ETA + Distance row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- ETA -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card_dark_rounded"
+                android:padding="14dp"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ARRIVAL IN"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="9sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.15" />
+
+                <TextView
+                    android:id="@+id/customer_txt_eta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8 min"
+                    android:textColor="#FFC107"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-black" />
+
+            </LinearLayout>
+
+            <!-- Distance -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card_dark_rounded"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AWAY"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="9sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.15" />
+
+                <TextView
+                    android:id="@+id/customer_txt_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.2 km"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Last updated line -->
+        <TextView
+            android:id="@+id/customer_txt_last_updated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📡 Location updated just now"
+            android:textColor="#50FFFFFF"
+            android:textSize="11sp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_marginBottom="14dp" />
+
+        <!-- Action Buttons: Cancel and Message side-by-side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/customer_btn_cancel"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:text="Cancel ✕"
+                android:textColor="#FF4D4D"
+                app:strokeColor="#FF4D4D"
+                app:strokeWidth="1.5dp"
+                app:cornerRadius="14dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/customer_btn_chat"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="Message 💬"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-bold"
+                app:backgroundTint="#FFC107"
+                app:cornerRadius="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Emergency SOS Button -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_sos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="350dp"
+        android:text="Emergency SOS 🚨"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:backgroundTint="#FF3B30"
+        app:icon="@android:drawable/ic_dialog_alert"
+        app:iconTint="#FFFFFF"
+        app:elevation="6dp" />
+
+    <!-- Confetti Overlay particle canvas -->
+    <com.workbee.app.ui.common.ConfettiView
+        android:id="@+id/customer_confetti_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="30dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

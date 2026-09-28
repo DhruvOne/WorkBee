@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme (Light Mode) -->
+    <style name="Theme.WorkBee" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_light</item>
+        <item name="colorOnPrimaryContainer">@color/black</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorSecondaryContainer">@color/grey_300</item>
+        <item name="colorOnSecondaryContainer">@color/black</item>
+
+        <!-- Status bar and navigation bar customization -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/background</item>
+        
+        <!-- Typography fonts -->
+        <item name="fontFamily">sans-serif-condensed</item>
+    </style>
+    
+    <!-- Dark Mode version of Theme -->
+    <style name="Theme.WorkBee.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_dark</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+
+        <item name="colorSecondary">@color/surface_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/grey_800</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+    </style>
+
+    <!-- Theme Overlay for BottomNavigationView to hide the selection indicator pill -->
+    <style name="Theme_App_BottomNavigationView">
+        <item name="colorContainer">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/grey_100"
+    app:cardBackgroundColor="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Business Name -->
+            <TextView
+                android:id="@+id/txt_vet_business_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miller Plumbing Services"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondary" />
+
+            <!-- Hourly Rate -->
+            <TextView
+                android:id="@+id/txt_vet_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="₹49.00/hr"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondary" />
+        </RelativeLayout>
+
+        <!-- Category & Experience -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/txt_vet_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plumbing"
+                android:textSize="12sp"
+                android:textColor="@color/primary_dark"
+                android:textStyle="bold"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:id="@+id/txt_vet_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experience: 8 Years"
+                android:textSize="12sp"
+                android:textColor="@color/grey_600" />
+        </LinearLayout>
+
+        <!-- Bio text -->
+        <TextView
+            android:id="@+id/txt_vet_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Professional residential plumbing for over 8 years."
+            android:textSize="12sp"
+            android:textColor="@color/grey_800"
+            android:layout_marginTop="8dp" />
+
+        <!-- Status & Stats row -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <!-- Star rating and jobs count -->
+            <TextView
+                android:id="@+id/txt_vet_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: 4.8 ★ | Completed: 42 jobs"
+                android:textSize="11sp"
+                android:textColor="@color/grey_600"
+                android:layout_centerVertical="true" />
+
+            <!-- Approved pill indicator -->
+            <TextView
+                android:id="@+id/txt_vet_status_pill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_status_completed"
+                android:text="APPROVED"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp" />
+        </RelativeLayout>
+
+        <!-- Divider line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_100"
+            android:layout_marginVertical="12dp" />
+
+        <!-- Action buttons (Vet actions) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_vet_suspend"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Suspend / Block"
+                android:textColor="@color/status_cancelled"
+                android:textStyle="bold"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/btn_vet_approve"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Approve Partner"
+                android:backgroundTint="@color/status_completed"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginStart="6dp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

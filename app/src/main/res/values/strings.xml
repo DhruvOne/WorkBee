@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WorkBee</string>
+    <string name="slogan">Your Home, Our Care</string>
+    
+    <!-- Onboarding Strings -->
+    <string name="onboarding_title_1">Find Expert Help</string>
+    <string name="onboarding_desc_1">Browse verified local professionals for plumbing, electrical, cleaning, and more instantly.</string>
+    <string name="onboarding_title_2">Easy &amp; Secure Booking</string>
+    <string name="onboarding_desc_2">Schedule visits at your convenience. Secure digital authentication and transparent pricing.</string>
+    <string name="onboarding_title_3">Quality Service Guaranteed</string>
+    <string name="onboarding_desc_3">Every provider is vetted. Track real-time booking status and read verified user reviews.</string>
+    <string name="get_started">Get Started</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+
+    <!-- Auth Strings -->
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Sign in to stay connected with WorkBee</string>
+    <string name="register_title">Join WorkBee</string>
+    <string name="register_subtitle">Create an account to start bookings or services</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_btn">Sign In</string>
+    <string name="register_btn">Register Now</string>
+    <string name="google_sign_in">Continue with Google</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="already_have_account">Already have an account? Sign In</string>
+    <string name="forgot_pwd_title">Reset Password</string>
+    <string name="forgot_pwd_desc">Enter your email and we\'ll send a password recovery link.</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    
+    <!-- User Roles -->
+    <string name="customer_role">Customer</string>
+    <string name="provider_role">Service Provider</string>
+    
+    <!-- Provider Extra Info -->
+    <string name="business_name_hint">Business Name (e.g. John\'s Plumbing)</string>
+    <string name="experience_hint">Experience (in years)</string>
+    <string name="hourly_rate_hint">Hourly Rate (₹/hr)</string>
+    <string name="bio_hint">Short Bio / Description</string>
+    
+    <!-- Main Dashboard -->
+    <string name="hello_user">Hello, %s!</string>
+    <string name="what_service_today">What service do you need today?</string>
+    <string name="search_services_hint">Search plumber, cleaner, electrician...</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View All</string>
+    <string name="featured_providers">Top Service Providers</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_bookings">Bookings</string>
+    <string name="nav_profile">Profile</string>
+    
+    <!-- Bookings -->
+    <string name="active_bookings">Active</string>
+    <string name="completed_bookings">Completed</string>
+    <string name="cancelled_bookings">Cancelled</string>
+    
+    <!-- Provider details -->
+    <string name="rating_count">%1₹s (%2₹d reviews)</string>
+    <string name="about_provider">About</string>
+    <string name="reviews">Reviews</string>
+    <string name="book_now">Book Now</string>
+    
+    <!-- Booking workflow -->
+    <string name="select_date_time">Select Date &amp; Time</string>
+    <string name="service_details">Service Details</string>
+    <string name="describe_problem_hint">Describe the work required...</string>
+    <string name="service_address_hint">Service Address</string>
+    <string name="price_summary">Pricing Summary</string>
+    <string name="base_rate">Base Rate</string>
+    <string name="service_fee">Service Fee (10%)</string>
+    <string name="total_price">Total</string>
+    <string name="confirm_booking">Confirm Booking</string>
+
+    <!-- Provider Panel -->
+    <string name="provider_dashboard">Provider Panel</string>
+    <string name="provider_jobs">Jobs List</string>
+    <string name="availability_title">Available for Jobs</string>
+    <string name="earnings_title">Total Earnings</string>
+    
+    <!-- Admin Panel -->
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="total_users">Total Users</string>
+    <string name="total_providers">Total Providers</string>
+    <string name="total_bookings">Total Bookings</string>
+    <string name="total_earnings">Revenue Share</string>
+</resources>
