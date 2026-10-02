@@ -18,7 +18,7 @@ RUN yes | sdkmanager --licenses > /dev/null && \
 
 WORKDIR /src
 COPY . .
-RUN chmod +x gradlew && ./gradlew assembleDebug --no-daemon
+RUN sed -i 's/\r$//' gradlew && chmod +x gradlew && ./gradlew assembleDebug --no-daemon
 
 # ---------- Stage 2: APK serve ----------
 FROM nginx:alpine
